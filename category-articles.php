@@ -5,7 +5,7 @@
  
 get_header(); ?> 
  
-<section id="primary" class="site-content">
+<section id="primary" class="site-content site-articles">
 	<div id="content" role="main">
 		 <div class="entry-header">
 
@@ -33,13 +33,16 @@ get_header(); ?>
 			        </div>
 			    </div>
 				 
-				<?php endwhile; 
+				<?php endwhile;  
 				 
 				else: ?>
 				<p>В категории нет постов</p>
 				 
 				 
 				<?php endif; ?>
+
+				<?php if ( function_exists( 'wp_corenavi' ) ) wp_corenavi(); ?>
+
 			</div>
 		</div>
 	</div>

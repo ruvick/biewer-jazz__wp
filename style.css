@@ -867,13 +867,15 @@ a {
   border: 1px solid #fff;
   background-color: rgba(255, 255, 255, .3);
   color: #fff;
-  font-size: 18px
+  font-size: 18px;
 }
 
 .button-green {
   display: inline-block;
   border-color: #7cce45;
-  color: #7cce45
+  color: #7cce45;
+  width: 207px;
+  height: 42px;
 }
 
 .button:hover {
@@ -988,7 +990,9 @@ a {
 
 .article-item {
   width: 48%;
-  margin-bottom: 44px
+  margin-bottom: 44px;
+  display: flex;
+  flex-direction: column;
 }
 
 .article-item__photo {
@@ -1019,7 +1023,8 @@ a {
 }
 
 .article-item__text {
-  margin-bottom: 36px
+  margin-bottom: 36px;
+  flex: 1 1 auto;
 }
 
 .footer {
@@ -1210,7 +1215,8 @@ a {
 }
 
 .article-blog-item__photo {
-  width: 360px;
+  /*width: 360px;*/
+  width: 515px;
   -ms-flex-negative: 0;
   flex-shrink: 0;
   margin-right: 70px;
@@ -1347,6 +1353,35 @@ a {
 #content {
   margin-bottom: auto;
 }
+
+.site-articles {
+  padding-bottom: 50px;
+}
+.page-numbers.current {
+    background-color: #7cce45;
+    color: #fff;
+}
+.page-numbers {
+    padding: 4px 6px;
+    border: 1px solid #7cce45;
+    margin: 2px;
+    text-align: center;
+    width: 30px;
+    color: #7cce45;
+}
+.prev.page-numbers, .next.page-numbers {
+    width: auto;
+}
+
+
+
+
+
+
+
+
+
+
 @media only screen and (max-width:1350px) {
   .header-slider__item .container {
     width: 100%;

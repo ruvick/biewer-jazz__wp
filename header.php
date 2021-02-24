@@ -64,7 +64,7 @@
         <div class="container">
           <a href="<?php echo home_url('/');?>" class="logo" style="background-image: url(<?php echo get_template_directory_uri();?>/img/Biewer_logo.svg)"></a>
           <div class="hamburger">
-            <span class="hamburger-top"></span>
+            <span class="hamburger-top"></span> 
             <span class="hamburger-middle"></span>
             <span class="hamburger-bottom"></span>
           </div>
