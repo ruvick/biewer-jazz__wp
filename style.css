@@ -27,7 +27,7 @@ html {
   font-family: sans-serif;
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%
+  -webkit-text-size-adjust: 100% 
 }
 
 body {
@@ -836,7 +836,7 @@ a {
   background-size: 90%;
   background-color: #94cf1d;
   margin-right: 44px;
-  border: 10px solid #37612c;
+  /*border: 10px solid #37612c;*/
   -webkit-box-sizing: unset;
   box-sizing: unset;
   -ms-flex-negative: 0;

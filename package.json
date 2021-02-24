@@ -1,0 +1,54 @@
+{
+  "name": "dog",
+  "version": "1.0.1",
+  "description": "dog",
+  "main": "index.php",
+  "scripts": {
+    "test": "editorconfig-checker", 
+    "clear_r": "ssh biverjaz_com@biverjaz.beget.tech \"rm biewer-jazz.com//public_html/wp-content/themes/dog/*.*\"",
+    "send_r": "scp -C *.php *.png *.css biverjaz_com@biverjaz.beget.tech:biewer-jazz.com//public_html/wp-content/themes/dog/",
+    "send_ms": "scp -C *.css biverjaz_com@biverjaz.beget.tech:biewer-jazz.com//public_html/wp-content/themes/dog/",
+    "send_one": "scp -C page-pageresult.php biverjaz_com@biverjaz.beget.tech:biewer-jazz.com//public_html/wp-content/themes/dog/",
+    "send_head": "scp -C header.php biverjaz_com@biverjaz.beget.tech:biewer-jazz.com//public_html/wp-content/themes/dog/",
+    "send_cat": "scp -C category.php biverjaz_com@biverjaz.beget.tech:biewer-jazz.com//public_html/wp-content/themes/dog/",
+    "send_singl": "scp -C single.php biverjaz_com@biverjaz.beget.tech:biewer-jazz.com//public_html/wp-content/themes/dog/",
+    "send_index": "scp -C index.php biverjaz_com@biverjaz.beget.tech:biewer-jazz.com//public_html/wp-content/themes/dog/",
+    "send_func": "scp -C functions.php biverjaz_com@biverjaz.beget.tech:biewer-jazz.com//public_html/wp-content/themes/dog/",
+    "send_futt": "scp -C footer.php biverjaz_com@biverjaz.beget.tech:biewer-jazz.com//public_html/wp-content/themes/dog/",
+
+    "mk_part_carbon": "ssh biverjaz_com@biverjaz.beget.tech \"rm biewer-jazz.com//public_html/wp-content/themes/dog/inc\"",
+    "send_carbon": "scp -C -r inc biverjaz_com@biverjaz.beget.tech:biewer-jazz.com//public_html/wp-content/themes/dog/",
+    "send_carbon_fild": "scp -C -r inc/custom-fields-options biverjaz_com@biverjaz.beget.tech:biewer-jazz.com//public_html/wp-content/themes/dog/inc/",
+    
+    "mk_part_dir": "ssh biverjaz_com@biverjaz.beget.tech \"rm biewer-jazz.com//public_html/wp-content/themes/dog/template-parts\"",
+    "send_part": "scp -C -r template-parts biverjaz_com@biverjaz.beget.tech:biewer-jazz.com//public_html/wp-content/themes/dog/",
+    "mk_part_img": "ssh biverjaz_com@biverjaz.beget.tech \"rm biewer-jazz.com//public_html/wp-content/themes/dog/img\"",
+    "send_img": "scp -r img biverjaz_com@biverjaz.beget.tech:biewer-jazz.com//public_html/wp-content/themes/dog/",
+    "mk_part_js": "ssh biverjaz_com@biverjaz.beget.tech \"rm biewer-jazz.com//public_html/wp-content/themes/dog/js\"",
+    "send_js": "scp -r js biverjaz_com@biverjaz.beget.tech:biewer-jazz.com//public_html/wp-content/themes/dog/",
+    "mk_part_fonts": "ssh biverjaz_com@biverjaz.beget.tech \"rm biewer-jazz.com//public_html/wp-content/themes/dog/fonts\"",
+    "send_fonts": "scp -C -r biverjaz_com@biverjaz.beget.tech:biewer-jazz.com//public_html/wp-content/themes/dog/",
+    "send_all": "npm run send_r & npm run send_css & npm run send_part & npm run send_img & npm run send_image & npm run send_js & npm run send_fonts"
+  },
+  "repository": { 
+    "type": "git",
+    "url": "git+https:github.com/ruvick/biewer-jazz__wp.git"
+  },
+  "keywords": [
+    "wp",
+    "WordPress"
+  ],
+  "author": "ruvick",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ruvick/biewer-jazz__wp.git/issues"
+  },
+  "homepage": "https://github.com/ruvick/biewer-jazz__wp.git#readme",
+  "dependencies": {
+    "editorconfig-checker": "^3.1.0",
+    "group-css-media-queries": "^1.4.1",
+    "postcss-cli": "^7.1.2",
+    "postcss-csso": "^4.0.0",
+    "postcss-import": "^12.0.1"
+  }
+}
