@@ -689,7 +689,8 @@ a {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 1000px
+  /*height: 1000px*/
+  min-height: 850px;
 }
 
 .header .container {
@@ -757,9 +758,11 @@ a {
   align-items: center;
   color: #fff;
   background-repeat: no-repeat;
-  background-position: center;
+  /*background-position: center;*/
+  background-position: 50% 30%;
   background-size: cover;
-  height: 1000px
+  /*height: 1000px;*/
+  height: 850px;
 }
 
 .header-slider__item .container {
@@ -837,6 +840,7 @@ a {
   background-color: #94cf1d;
   margin-right: 44px;
   /*border: 10px solid #37612c;*/
+  box-shadow: 1px 1px 9px 0px #000000;
   -webkit-box-sizing: unset;
   box-sizing: unset;
   -ms-flex-negative: 0;
@@ -853,7 +857,8 @@ a {
 .header-slider__item-descr {
   font-size: 40px;
   font-family: Vogue;
-  margin-bottom: 100px
+  /*margin-bottom: 100px;*/
+  margin-bottom: 60px;
 }
 
 .button {
@@ -913,7 +918,8 @@ a {
   left: 50%;
   -webkit-transform: translate(-50%);
   transform: translate(-50%);
-  bottom: 55px
+  /*bottom: 55px*/
+  bottom: 35px;
 }
 
 .slick-dots li {
