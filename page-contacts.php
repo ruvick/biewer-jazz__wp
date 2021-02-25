@@ -20,11 +20,11 @@ get_header(); ?>
 
 		<ul>
 			<li>Адрес: <? echo carbon_get_theme_option("as_address"); ?></li>
-			<li>Телефон: <a href="tel:<? echo preg_replace('/[^0-9]/', '', $tel); ?>"><? echo $tel = carbon_get_theme_option("as_phone"); ?></a></li>
+			<li>Телефон: <a href="tel:<? echo preg_replace('/[^0-9]/', '', $tel); ?>"><? echo $tel = carbon_get_theme_option("as_phone"); ?>, <? echo $tel = carbon_get_theme_option("as_phone_2"); ?></a></li>
 			<li>Email: <a href="mailto:<? echo $mail = carbon_get_theme_option("as_email"); ?>"><? echo $mail; ?></a></li>
-			<li>ВКонтакте:<a href="<? echo carbon_get_theme_option("soc_vk"); ?>" aria-label="ВКонтакте"></a></li>
-			<li>Инстаграм:<a href="<? echo carbon_get_theme_option("soc_insta"); ?>" aria-label="Инстаграм"></a></li>
-			<li>Facebook:<a href="<? echo carbon_get_theme_option("soc_facebook"); ?>" aria-label="Инстаграм"></a></li>
+			<li><a href="<? echo carbon_get_theme_option("soc_vk"); ?>" aria-label="ВКонтакте">ВКонтакте</a></li>
+			<li>Инстаграм: <? echo carbon_get_theme_option("soc_insta"); ?></li>
+			<li>Facebook<a href="<? echo carbon_get_theme_option("soc_facebook"); ?>" aria-label=">Facebook"></a></li>
 		</ul>
 
 </div>

@@ -16,6 +16,8 @@ Container::make( 'theme_options', 'as_theme_options', 'Настройки тем
     ->add_tab('Контакты', array(
         Field::make( 'text', 'as_phone', __( 'Телефон' ) )
           ->set_width(50),
+        Field::make( 'text', 'as_phone_2', __( 'Телефон 2' ) )
+          ->set_width(50),
         Field::make( 'text', 'as_email', __( 'Email' ) )
           ->set_width(50),
         Field::make( 'text', 'as_email_send', __( 'Email для отправки' ) )
