@@ -22,31 +22,41 @@ get_header(); ?>
 			<li>Адрес: <? echo carbon_get_theme_option("as_address"); ?></li>
 			<li>Телефон: <a href="tel:<? echo preg_replace('/[^0-9]/', '', $tel); ?>"><? echo $tel = carbon_get_theme_option("as_phone"); ?>, <? echo $tel = carbon_get_theme_option("as_phone_2"); ?></a></li>
 			<li>Email: <a href="mailto:<? echo $mail = carbon_get_theme_option("as_email"); ?>"><? echo $mail; ?></a></li>
-			<li><a href="<? echo carbon_get_theme_option("soc_vk"); ?>" aria-label="ВКонтакте">ВКонтакте</a></li>
-			<li>Инстаграм: <? echo carbon_get_theme_option("soc_insta"); ?></li>
-			<li>Facebook<a href="<? echo carbon_get_theme_option("soc_facebook"); ?>" aria-label=">Facebook"></a></li>
 		</ul>
+    <div class="social-block">
+      <ul class="ul-clean">
+        <?php if(carbon_get_theme_option('soc_vk')):?>
+          <li><a href="<?php echo carbon_get_theme_option('soc_vk');?>" style="background-image: url(<?php echo get_template_directory_uri();?>/img/vk.svg)"></a></li>
+        <?php endif;?>
+        <?php if(carbon_get_theme_option('soc_insta')):?>
+        <li><a href="<?php echo carbon_get_theme_option('soc_insta');?>" style="background-image: url(<?php echo get_template_directory_uri();?>/img/inst.svg)"></a></li>
+        <?php endif;?> 
+        <?php if(carbon_get_theme_option('soc_facebook')):?>
+        <li><a href="<?php echo carbon_get_theme_option('soc_facebook');?>" style="background-image: url(<?php echo get_template_directory_uri();?>/img/f.svg)"></a></li>
+        <?php endif;?>
+      </ul>
+    </div>
 
 </div>
 
-		<div class="block__map" id="map"></div>
-		<script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+<div class="block__map" id="map"></div>
+<script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 
-		<script>
-			ymaps.ready(init);
+<script>
+   ymaps.ready(init);
 
-			function init () {
-				var myMap = new ymaps.Map("map", {
+   function init () {
+    var myMap = new ymaps.Map("map", {
         // Координаты центра карты
         center:[<?php echo carbon_get_theme_option('map_point') ?>],
         // Масштаб карты
         zoom: 17,
         // Выключаем все управление картой
         controls: []
-      }); 
-				
-				var myGeoObjects = [];
-				
+    }); 
+    
+    var myGeoObjects = [];
+    
     // Указываем координаты метки
     myGeoObjects = new ymaps.Placemark([<?php echo carbon_get_theme_option('map_point') ?>],{
     	// hintContent: '<div class="map-hint">Авто профи, Курск, ул.Комарова, 16</div>',
@@ -59,7 +69,7 @@ get_header(); ?>
                     iconImageSize: [70, 70],
                     // Смещение верхнего угла относительно основания иконки
                     iconImageOffset: [-25, -110]
-                  });
+                });
     
     var clusterer = new ymaps.Clusterer({
     	clusterDisableClickZoom: false,
@@ -71,7 +81,7 @@ get_header(); ?>
     // Отключим zoom
     myMap.behaviors.disable('scrollZoom');
 
-  }
+}
 </script>
 
 </section>

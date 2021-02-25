@@ -1435,12 +1435,19 @@ a {
 }
 
 .contacts ul {
-  margin-bottom: 30px;
+  /*margin-bottom: 30px;*/
   padding: 0;
 }
 .contacts ul li {
     list-style: none;
     margin-bottom: 10px;
+}
+
+.contacts .social-block {
+   margin-bottom: 30px;
+}
+.contacts .social-block a {
+    margin: 0 10px 0 0;
 }
 
 .block__map {
@@ -1479,6 +1486,7 @@ a {
 .entry-header {
   padding-bottom: 30px;
 }
+
 
 
 
