@@ -1,7 +1,8 @@
 jQuery(document).ready(function ($) {
   $('.header-slider').slick({
     prevArrow: '<div class="slider-arrow slider-arrow-prev"></div>',
-    nextArrow: '<div class="slider-arrow slider-arrow-next"></div>',
+    nextArrow: '<div class="slider-arrow slider-arrow-next"></div>', 
+    arrows: false,
     dots: true
   });
   $('.hamburger').click(function () {
