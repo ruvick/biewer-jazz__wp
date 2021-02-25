@@ -33,11 +33,19 @@ Container::make( 'theme_options', 'as_theme_options', 'Настройки тем
         Field::make('text', 'text_map', 'Текст метки карты')
           ->set_width(50),
     ) );
-Container::make('post_meta', 'single_shenki_post', 'Доп поля')
-->show_on_template('single-shenki.php') 
+Container::make('post_meta', 'single_porodi_post', 'Доп поля')
+->show_on_template('single-porodi.php') 
 ->add_fields(array( 
   Field::make('text', 'gender', 'Пол')
   ->set_width(30),
   Field::make('text', 'awards', 'Награды')
+  ->set_width(30),
+));
+Container::make('post_meta', 'single_shenki_post', 'Доп поля')
+->show_on_template('single-shenki.php') 
+->add_fields(array( 
+  Field::make('text', 'dad', 'Папа')
+  ->set_width(30),
+  Field::make('text', 'mother', 'Мама')
   ->set_width(30),
 ));

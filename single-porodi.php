@@ -1,7 +1,7 @@
 <?php
 
 /*
-Template Name: Шаблон Записей Щенки
+Template Name: Шаблон Записей Породы
 Template Post Type: post
 */
 
@@ -13,7 +13,7 @@ get_header();
 			<div class="container">
 		      <?php
 				if ( function_exists('yoast_breadcrumb') ) {
-				  yoast_breadcrumb( '<p id="breadcrumbs">','</p>' ); 
+				  yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );
 				}
 				?>
 			</div>

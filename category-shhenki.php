@@ -32,12 +32,12 @@ get_header(); ?>
 								<h2 class="section-title"><?php the_title();?></h2>
 								<div class="article-blog-item__excerpt">
 									<div class="parents">
-										<span class="color-green">Пол:</span>
-										<span><?php echo carbon_get_the_post_meta('gender');?></span>
+										<span class="color-green">Папа:</span>
+										<span><?php echo carbon_get_the_post_meta('dad');?></span>
 									</div>
 									<div class="parents">
-										<span class="color-green">Награды:</span>
-										<span><?php echo carbon_get_the_post_meta('awards');?></span>
+										<span class="color-green">Мама:</span>
+										<span><?php echo carbon_get_the_post_meta('mother');?></span>
 									</div>
 								</div>
 								<a href="<?php echo get_permalink();?>" class="button button-green">Подробнее</a>
