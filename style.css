@@ -267,6 +267,25 @@ template {
   display: none
 }
 
+#page {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+#content {
+  margin-bottom: auto;
+}
+
 .slick-slider {
   position: relative;
   display: block;
@@ -631,7 +650,7 @@ body textarea:required:valid {
   color: #666
 }
 
-body,
+/*body,*/
 html {
   height: 100%;
   overflow-x: hidden
@@ -1216,7 +1235,8 @@ a {
 
 .article-blog-item__photo {
   /*width: 360px;*/
-  width: 515px;
+  max-width: 515px;
+  width: 100%;
   -ms-flex-negative: 0;
   flex-shrink: 0;
   margin-right: 70px;
@@ -1337,7 +1357,7 @@ a {
 .box-modal_close { position: absolute; right: 10px; top: 6px; font-size: 11px; line-height: 15px; color: #999; cursor: pointer; }
 .box-modal_close:hover { color: #666; }
 
-#page {
+/*#page {
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
@@ -1349,10 +1369,12 @@ a {
   -o-flex-direction: column;
   flex-direction: column;
   min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
 }
 #content {
   margin-bottom: auto;
-}
+}*/
 
 .site-articles {
   padding-bottom: 50px;
@@ -1377,9 +1399,11 @@ a {
   /*padding: 0 0 30px 0;*/
 }
 
+.exhibitions .section-title,
 .contacts .section-title {
   text-align-last: left;
 }
+.exhibitions .section-title:after,
 .contacts .section-title:after {
     left: 0;
     -webkit-transform: translate(0);
@@ -1403,6 +1427,37 @@ a {
 .ymaps-2-1-77-gotoymaps__container, .ymaps-2-1-77-gototech, .ymaps-2-1-77-copyright__content, .ymaps-2-1-78-copyright__wrap, .ymaps-2-1-78-map-copyrights-promo {
     display: none !important;
 }
+
+.exhibitions {
+  padding: 0 0 30px 0;
+}
+.exhibitions .section-title {
+
+}
+.exhibitions__row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.exhibitions__item {
+  max-width: 630px;
+  width: 100%;
+  max-height: 414px;
+  overflow: hidden;
+}
+
+.exhibitions__item img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.exhibitions__description p {
+  margin: 0 0 15px 0;
+}
+
+
+
 
 
 
