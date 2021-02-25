@@ -26,13 +26,13 @@ get_header(); ?>
     <div class="social-block">
       <ul class="ul-clean">
         <?php if(carbon_get_theme_option('soc_vk')):?>
-          <li><a href="<?php echo carbon_get_theme_option('soc_vk');?>" style="background-image: url(<?php echo get_template_directory_uri();?>/img/vk.svg)"></a></li>
+          <li><a href="<?php echo carbon_get_theme_option('soc_vk');?>" target="_blank" style="background-image: url(<?php echo get_template_directory_uri();?>/img/vk.svg)"></a></li>
         <?php endif;?>
         <?php if(carbon_get_theme_option('soc_insta')):?>
-        <li><a href="<?php echo carbon_get_theme_option('soc_insta');?>" style="background-image: url(<?php echo get_template_directory_uri();?>/img/inst.svg)"></a></li>
+        <li><a href="<?php echo carbon_get_theme_option('soc_insta');?>" target="_blank" style="background-image: url(<?php echo get_template_directory_uri();?>/img/inst.svg)"></a></li>
         <?php endif;?> 
         <?php if(carbon_get_theme_option('soc_facebook')):?>
-        <li><a href="<?php echo carbon_get_theme_option('soc_facebook');?>" style="background-image: url(<?php echo get_template_directory_uri();?>/img/f.svg)"></a></li>
+        <li><a href="<?php echo carbon_get_theme_option('soc_facebook');?>" target="_blank" style="background-image: url(<?php echo get_template_directory_uri();?>/img/f.svg)"></a></li>
         <?php endif;?>
       </ul>
     </div>
