@@ -1488,13 +1488,31 @@ a {
 }
 
 
-
+.slick-dots {
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    width: 1200px;
+    /* left: 50%; */
+    left: 5%;
+    bottom: 45px;
+}
 
 
 @media only screen and (max-width:1350px) {
   .header-slider__item .container {
     width: 100%;
     padding-left: 50px
+  }
+}
+
+@media only screen and (max-width:1330px) {
+  .slick-dots {
+    left: 5%;
   }
 }
 
@@ -1519,6 +1537,10 @@ a {
     right: 0;
     text-align: right
   }
+
+  .header-nav .menu a {
+    border-radius: 0;
+}
 
   .header-nav .container {
     -webkit-box-pack: justify;
@@ -1701,6 +1723,16 @@ a {
   .gods-gallery__item__big {
     width: 100%
   }
+  .header-slider__item {
+    background-position: 90% 30%;
+  }
+}
+
+@media only screen and (max-width:515px) {
+  .header-nav .menu {
+    width: 100%;
+    padding-top: 6%;
+  }
 }
 
 @media only screen and (max-width:480px) {
@@ -1724,6 +1756,13 @@ a {
 
   .gods-gallery__item {
     height: 270px
+  }
+}
+
+@media only screen and (max-width:414px) {
+  .header-nav .menu {
+    width: 100%;
+    padding-top: 8%;
   }
 }
 
