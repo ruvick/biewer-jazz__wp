@@ -1388,20 +1388,28 @@ a {
 .site-articles {
   padding-bottom: 50px;
 }
+.pagination {
+  display: flex;
+}
 .page-numbers.current {
     background-color: #7cce45;
     color: #fff;
 }
 .page-numbers {
-    padding: 4px 6px;
+    /* padding: 4px 6px; */
     border: 1px solid #7cce45;
-    margin: 2px;
+    margin-right: 8px;
     text-align: center;
     width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: #7cce45;
 }
 .prev.page-numbers, .next.page-numbers {
     width: auto;
+    padding: 10px;
 }
 
 .contacts {
