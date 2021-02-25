@@ -9,7 +9,7 @@ get_header(); ?>
 <div id="primary" class="content-area">
 	<main id="main" class="site-main">
 
-		<div class="entry-header">
+		<div class="entry-header pappies-cat">
 			<div class="container">
 				<?php
 				if ( function_exists('yoast_breadcrumb') ) {
@@ -32,12 +32,12 @@ get_header(); ?>
 								<h2 class="section-title"><?php the_title();?></h2>
 								<div class="article-blog-item__excerpt">
 									<div class="parents">
-										<span class="color-green">Мама:</span>
-										<span>ROYAL CURAZ GABRIELLA</span>
+										<span class="color-green">Пол:</span>
+										<span><?php echo carbon_get_the_post_meta('gender');?></span>
 									</div>
 									<div class="parents">
-										<span class="color-green">Папа:</span>
-										<span>ROYAL CURAZ KELWIN</span>
+										<span class="color-green">Награды:</span>
+										<span><?php echo carbon_get_the_post_meta('awards');?></span>
 									</div>
 								</div>
 								<a href="<?php echo get_permalink();?>" class="button button-green">Подробнее</a>
