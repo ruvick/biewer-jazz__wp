@@ -708,8 +708,8 @@ a {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  /*height: 1000px*/
-  min-height: 850px;
+  height: 1000px
+  /*min-height: 850px;*/
 }
 
 .header .container {
@@ -1068,7 +1068,7 @@ a {
 }
 
 .footer .logo {
-  background-color: transparent;
+  /*background-color: transparent;*/
   border: none
 }
 

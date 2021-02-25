@@ -15,7 +15,7 @@
 
 <footer class="footer">
   <div class="container">
-    <div class="logo" style="background-image: url(<?php echo get_template_directory_uri();?>/img/Biewer_logo_white.svg)"></div>
+    <div class="logo" style="background-image: url(<?php echo get_template_directory_uri();?>/img/Biewer_logo.svg)"></div>
     <div class="social-block">
       <ul class="ul-clean">
         <?php if(carbon_get_theme_option('soc_vk')):?>
