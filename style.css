@@ -1302,6 +1302,9 @@ a {
 .entry-dog-content__text {
   width: 48%
 }
+.entry-dog-content__text p {
+  margin: 0;
+}
 
 .gods-gallery {
   display: -moz-flex;
