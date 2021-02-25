@@ -1397,6 +1397,7 @@ a {
 }
 .pagination {
   display: flex;
+  justify-content: flex-end;
 }
 .page-numbers.current {
     background-color: #7cce45;
@@ -1617,6 +1618,9 @@ a {
   .gods-gallery__item {
     height: 200px
   }
+  .article-blog-item .section-title {
+    margin-top: 15px;
+  }
 }
 
 @media only screen and (max-width:768px) {
@@ -1674,6 +1678,21 @@ a {
   .gods-gallery__item-big {
     width: 49%
   }
+  .article-blog-item__content {
+    width: 72%;
+  }
+  .exhibitions__description iframe {
+    width: 100%;
+  }
+  .wp-block-image img {
+    width: 100%;
+  }
+  .block__map {
+    height: 400px;
+  }
+  .ymaps-2-1-78-map {
+    height: 400px !important;
+  }
 }
 
 @media only screen and (max-width:550px) {
@@ -1726,12 +1745,34 @@ a {
   .header-slider__item {
     background-position: 90% 30%;
   }
+  .article-blog-item__content {
+    width: 100%;
+  }
+  .article-blog-item__photo {
+    margin-right: 0;
+  }
 }
 
 @media only screen and (max-width:515px) {
   .header-nav .menu {
     width: 100%;
     padding-top: 6%;
+  }
+  .article-blog-item {
+    margin-bottom: 0;
+  }
+  .article-blog-item__photo {
+    margin-right: 0;
+  }
+  .article-blog-item .button {
+    margin-top: 20px;
+    margin-bottom: 60px;
+  }
+    .block__map {
+    height: 250px;
+  }
+  .ymaps-2-1-78-map {
+    height: 250px !important;
   }
 }
 
