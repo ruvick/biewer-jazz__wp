@@ -26,4 +26,8 @@ Container::make( 'theme_options', 'as_theme_options', 'Настройки тем
           ->set_width(50),
         Field::make( 'text', 'as_address', __( 'Адрес' ) )
           ->set_width(50),
+        Field::make('text', 'map_point', 'Координаты карты')
+          ->set_width(50),
+        Field::make('text', 'text_map', 'Текст метки карты')
+          ->set_width(50),
     ) );

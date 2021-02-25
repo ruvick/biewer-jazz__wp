@@ -18,7 +18,7 @@
 
     "mk_part_carbon": "ssh biverjaz_com@biverjaz.beget.tech \"rm biewer-jazz.com//public_html/wp-content/themes/dog/inc\"",
     "send_carbon": "scp -C -r inc biverjaz_com@biverjaz.beget.tech:biewer-jazz.com//public_html/wp-content/themes/dog/",
-    "send_carbon_fild": "scp -C -r inc/custom-fields-options biverjaz_com@biverjaz.beget.tech:biewer-jazz.com//public_html/wp-content/themes/dog/inc/",
+    "send_carbon_fild": "scp -C -r inc/custom-field-options biverjaz_com@biverjaz.beget.tech:biewer-jazz.com//public_html/wp-content/themes/dog/inc/",
     
     "mk_part_dir": "ssh biverjaz_com@biverjaz.beget.tech \"rm biewer-jazz.com//public_html/wp-content/themes/dog/template-parts\"",
     "send_part": "scp -C -r template-parts biverjaz_com@biverjaz.beget.tech:biewer-jazz.com//public_html/wp-content/themes/dog/",

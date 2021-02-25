@@ -1373,8 +1373,26 @@ a {
     width: auto;
 }
 
+.contacts {
+  /*padding: 0 0 30px 0;*/
+}
 
+.contacts ul {
+  margin-bottom: 30px;
+}
+.contacts ul li {
+    list-style: none;
+    margin-bottom: 10px;
+}
 
+.block__map {
+  /* max-width: 1300px; */
+  width: 100%;
+  height: 600px;
+}
+.ymaps-2-1-77-gotoymaps__container, .ymaps-2-1-77-gototech, .ymaps-2-1-77-copyright__content, .ymaps-2-1-78-copyright__wrap, .ymaps-2-1-78-map-copyrights-promo {
+    display: none !important;
+}
 
 
 
