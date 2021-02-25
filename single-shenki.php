@@ -25,9 +25,9 @@ get_header();
 				      <h1 class="section-title"><?php the_title();?></h1>
 
 					<?php
-					the_content();
-				endwhile; // End of the loop.
-				?>
+						the_content();
+					endwhile; // End of the loop.
+					?>
 			</div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
