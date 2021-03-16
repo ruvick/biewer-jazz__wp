@@ -17,7 +17,7 @@ require_once __DIR__ . '/inc/custom-field-options/theme-options.php';
 add_action( 'after_setup_theme', 'crb_load' );
 function crb_load() {
 require_once( get_template_directory() . '/inc/carbon-fields/vendor/autoload.php' );
-\Carbon_Fields\Carbon_Fields::boot();
+\Carbon_Fields\Carbon_Fields::boot(); 
 }
 
 
@@ -133,7 +133,9 @@ add_action( 'widgets_init', 'dog_widgets_init' );
 /**
  * Enqueue scripts and styles.
  */
-function dog_scripts() {
+define("allversion", "1.0.1");
+
+function dog_scripts() { 
 	wp_enqueue_style( 'fonts', '//fonts.googleapis.com/css?family=Alice|Fira+Sans&display=swap&subset=cyrillic', array(), null, 'all');
 	wp_enqueue_style( 'dog-style', get_stylesheet_uri() );
 

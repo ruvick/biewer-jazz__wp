@@ -14,11 +14,11 @@ get_header();
 			<div class="container">
 				<?php
 				if ( function_exists('yoast_breadcrumb') ) {
-					yoast_breadcrumb( '<p id="breadcrumbs">','</p>' ); 
+					yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );  
 				}
 				?>
 			</div>
-			<div class="container">
+			<div class="breeds-container container">
 				<h1 class="section-title"><?php single_cat_title( '', true );?></h1>
         <div class="entry-dog-content">
           <div class="entry-dog-content__photo" style="background-image: url(<?php echo get_template_directory_uri();?>/img/dog-1-1.jpg)"></div>
@@ -37,9 +37,9 @@ get_header();
 					<?php
 					while ( have_posts() ) : the_post(); ?>
 
-						<div class="article-blog-item article-dog-item">
-							<div class="article-blog-item__photo" style="background-image: url(<?php echo get_the_post_thumbnail_url($post->ID, 'large');?>)"></div>
-							<div class="article-blog-item__content">
+						<div class="article-blog-item__breads article-blog-item article-dog-item">
+							<div class="article-blog-item__photo-breads article-blog-item__photo" style="background-image: url(<?php echo get_the_post_thumbnail_url($post->ID, 'large');?>)"></div>
+							<div class="article-blog-item__content-breads article-blog-item__content">
 								<h2 class="section-title"><?php the_title();?></h2>
 								<div class="article-blog-item__excerpt">
 									<div class="parents">
