@@ -14,7 +14,7 @@ This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 
 dog is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
-Underscores is distributed under the terms of the GNU GPL v2 or later.
+Underscores is distributed under the terms of the GNU GPL v2 or later. 
 
 Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
@@ -1498,11 +1498,22 @@ a {
     display: flex;
     position: absolute;
     width: 1200px;
-    /* left: 50%; */
-    left: 5%;
+    /*left: 5%;*/
+    left: 16.5%;
     bottom: 45px;
 }
 
+@media only screen and (max-width:1500px) {
+  .slick-dots {
+    left: 7%;
+  }
+}
+
+@media only screen and (max-width:1440px) {
+  .slick-dots {
+    left: 5%;
+  }
+}
 
 @media only screen and (max-width:1350px) {
   .header-slider__item .container {
@@ -1522,6 +1533,12 @@ a {
     max-width: 100%;
     padding-left: 14px;
     padding-right: 14px
+  }
+}
+
+@media only screen and (max-width:1280px) {
+  .slick-dots {
+    left: 3.5%;
   }
 }
 
@@ -1576,6 +1593,12 @@ a {
 
   .gods-gallery__item {
     height: 250px
+  }
+}
+
+@media only screen and (max-width:960px) {
+  .slick-dots {
+    left: 4.5%;
   }
 }
 
