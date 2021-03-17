@@ -133,7 +133,7 @@ add_action( 'widgets_init', 'dog_widgets_init' );
 /**
  * Enqueue scripts and styles.
  */
-define("allversion", "1.0.1");
+define("allversion", "1.0.3");
 
 function dog_scripts() { 
 	wp_enqueue_style( 'fonts', '//fonts.googleapis.com/css?family=Alice|Fira+Sans&display=swap&subset=cyrillic', array(), null, 'all');

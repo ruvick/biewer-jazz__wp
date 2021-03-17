@@ -27,7 +27,7 @@ html {
   font-family: sans-serif;
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100% 
+  -webkit-text-size-adjust: 100%  
 }
 
 body {
@@ -51,7 +51,7 @@ h1 {
 figcaption,
 figure,
 main {
-  display: block
+  display: block 
 }
 
 figure {
@@ -987,6 +987,14 @@ a {
   flex-direction: column;
   align-items: center;
 }
+.breeds-container .section-title {
+  text-align: center !important;
+}
+.breeds-container .section-title:after {
+  left: 50% !important;
+  -webkit-transform: translate(-50%) !important;
+  transform: translate(-50%) !important;
+}
 
 .about .section-title {
   margin-top: 0;
@@ -1283,6 +1291,9 @@ a {
 .article-blog-item__content-breads {
   max-width: 515px;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .article-blog-item .section-title {
@@ -1332,7 +1343,7 @@ a {
   background-size: cover;
   -ms-flex-negative: 0;
   flex-shrink: 0;
-  margin-bottom: 15px;
+  margin-bottom: 35px;
 }
 
 .entry-dog-content__text {
